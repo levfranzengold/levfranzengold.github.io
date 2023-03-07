@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?=Mulidisplay=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    /* border: solid 1px black; */
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    overflow: hidden;
+    /* border: solid 1px red; */
+}
+
+.panel h3 {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 1rem;
+    margin: 0;
+    padding: 1rem;
+    opacity: 0;
+    border-radius: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(8,8,108,0.788953081232493) 0%, rgba(13,70,185,0.5508578431372548) 100%);
+}
+
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
