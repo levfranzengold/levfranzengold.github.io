@@ -4,44 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expanding Cards</title>
+    <title>Rotating Navigation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
-        <div class="panel active" style="background-image:url('img/2014.jpg')">
-        <h3>Новый Год (2014г.)</h3>
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
-        <div class="panel" style="background-image:url('img/2014-2.jpg')">
-            <h3>Игры разума (2014г.)</h3>
+        
+        <div class="content">
+            <div>
+                <h1>Что здесь происходит?</h1>
+                
+                <small>Lev Franzengold</small>
+                <p>Это главная страница сайта. В левом верхнем углу расположен розовый круг с иконками "меню" и "закрыть" переключающими по клику отображение страницы в повернутый на 20 градусов основной контент и выезжающюю в нижнем левом углу навигационную панель позволяющую переключаться между страницами сайта. </p>
+            </div>
+            <hr>
+            <div class="sub-description">
+                <img src="https://images.unsplash.com/photo-1678663474154-fe251019117e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8SnBnNktpZGwtSGt8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt="">
+                <div>
+                    <p>Олень - благородное животное с мощными рогами и крепкими копытами. Величавые носители роговых отростков обожают траву, кору и сухостой. Благодаря стабильному органическому питанию некоторые особи этого вида могут весить более 100 килограмм. Они живут в дикой природе и могут представлять опасность перепрыгивая дорогу перед стремительно едущей машиной, влетая в лобовое стекло беззаботно едущих куда-то человеков. </p>
+                    <figure>
+                        <blockquote>
+                            <p>
+                                Куда несёт тебя олень?<br>
+                                Мимо машин и суеты мирской.<br>
+                                Остановись, задумайся над тем,<br>
+                                Как краток миг и вкусен сухостой.<br>
+                                <br>
+                                Минуй дорогу лучше стороной,<br>
+                                Аварию и суету она сулит.<br>
+                                Пожуй травы, попей воды,<br>
+                                Ведь хорошо!<br>
+                                Когда головка от ударов не болит.<br>
+                            </p>
+                        </blockquote>
+                        <figcaption>- Дроздов Н.Н.<cite>"В Полях и Лесах"</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- <div>
+                <h3>My Dog</h3>
+                <img src="https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzZ8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="some dog">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit rem saepe temporibus. Nobis sint assumenda fugiat vitae expedita enim sed aliquid consectetur sit cupiditate ea impedit quos praesentium quam, et nisi, architecto aspernatur error ipsum? Minima aliquam deserunt soluta, labore adipisci deleniti placeat beatae illo dolore eius itaque atque tempore nulla ex, molestiae ipsum? Assumenda, et deleniti qui nostrum nulla debitis voluptatibus earum atque illo, officiis nisi fuga. Explicabo, ea cum hic temporibus quasi blanditiis.</p>
+            </div> -->
         </div>
-        <div class="panel" style="background-image:url('img/2015.jpg')">
-            <h3>Сбор шишек в национальном парке Кузьминки (2015г.)</h3>
-        </div>
-        <div class="panel" style="background-image:url('img/2016-3.jpg')">
-            <h3>Медведь затаил обиду (2016г.)</h3>
-        </div>
-        <div class="panel" style="background-image:url('img/2016.jpg')">
-            <h3>Сударь, извольте потчевать! (2016г.)</h3>
-        </div>
-        <div class="panel" style="background-image:url('img/2016-4.jpg')">
-            <h3>Восхитительная булочка, мусье!</h3>
-        </div>
-        <div class="panel" style="background-image:url('img/2016-2.jpg')">
-            <h3>El Gatto Karasik (2016г.)</h3>
-        </div>
-        <div class="panel" style="background-image:url('img/2017.jpg')">
-            <h3>Восторг обладания (2017г.)</h3>
-        </div>
-        <div class="panel" style="background-image:url('img/2019.jpg')">
-            <h3>И с песней этой качу по свету (2019г.)</h3>
-        </div>
-        <div class="panel" style="background-image:url('img/tison.jpg')">
-            <h3>Тайсон Фьюри</h3>
-        </div>
+
+        
+
+
     </div>
     
+    <nav>
+        <ul>
+            <li>    
+                <a href="index.html"><i class="fas fa-home"></i>Главная</a>
+            </li>
+
+
+            <li>
+                <a href="expandingcards.html"><i class="fas fa-user-alt"></i>Карточки</a>
+            </li>
+
+            <li>
+                <a href="contact.html"><i class="fas fa-envelope"></i>Контакты</a>
+            </li>
+        </ul>
+    </nav>    
     
 
 
